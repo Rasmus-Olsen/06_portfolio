@@ -1,3 +1,6 @@
+/*
+ * Burgermenu
+ */
 document.addEventListener("DOMContentLoaded", function () {
   const menuIcon = document.getElementById("menu-icon");
   const active = document.getElementById("active-menu");
@@ -6,3 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     active.classList.toggle("menu-opened");
   });
 });
+
+/*
+ * Dropdown
+ */

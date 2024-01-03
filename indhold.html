@@ -12,10 +12,10 @@
     <title>Indhold</title>
   </head>
   <body>
+    <div class="top">
+      <img src="images/topbar.webp" alt="" />
+    </div>
     <header id="active-menu">
-      <div class="top">
-        <h1>Stort billede af mig med mit navn osv. som en slags topbar</h1>
-      </div>
       <div class="inner-header">
         <div class="logo">
           <a href="index.html"><img src="images/favicon_io/android-chrome-192x192.png" alt="Logo" /></a>
@@ -32,16 +32,24 @@
       <nav class="active-show">
         <ul>
           <li>
-            <a href="index.html">Forside</a>
+            <a class="active" href="index.html">Forside</a>
           </li>
-          <li>
-            <a href="web.html">Web</a>
-          </li>
-          <li><a href="ux.html">UX</a></li>
-          <li><a href="animation.html">Animation</a></li>
-          <li>
-            <a class="active" href="indhold.html">Indhold</a>
-          </li>
+          <!---Dropdown-->
+          <div class="dropdown">
+            <p class="dropdown-btn">
+              Portfolio
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>
+            </p>
+            <div class="dropdown-content">
+              <a href="web.html" class="dropdown-item">Web</a>
+              <a href="ux.html" class="dropdown-item">UX</a>
+              <a href="animation.html" class="dropdown-item">Animation</a>
+              <a href="indhold.html" class="dropdown-item">Indhold</a>
+            </div>
+          </div>
+          <!---Dropdown end-->
           <li>
             <a href="cv.html">CV</a>
           </li>

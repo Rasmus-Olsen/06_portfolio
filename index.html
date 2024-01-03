@@ -13,7 +13,8 @@
   </head>
   <body>
     <div class="top">
-      <img src="images/topbar.png" alt="" />
+      <img src="images/Artboard_3.webp" alt="" />
+      <img class="computer" src="images/computer.webp" alt="" />
     </div>
     <header id="active-menu">
       <div class="inner-header">
@@ -34,14 +35,22 @@
           <li>
             <a class="active" href="index.html">Forside</a>
           </li>
-          <li>
-            <a href="web.html">Web</a>
-          </li>
-          <li><a href="ux.html">UX</a></li>
-          <li><a href="animation.html">Animation</a></li>
-          <li>
-            <a href="indhold.html">Indhold</a>
-          </li>
+          <!---Dropdown-->
+          <div class="dropdown">
+            <p class="dropdown-btn">
+              Portfolio
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>
+            </p>
+            <div class="dropdown-content">
+              <a href="web.html" class="dropdown-item">Web</a>
+              <a href="ux.html" class="dropdown-item">UX</a>
+              <a href="animation.html" class="dropdown-item">Animation</a>
+              <a href="indhold.html" class="dropdown-item">Indhold</a>
+            </div>
+          </div>
+          <!---Dropdown end-->
           <li>
             <a href="cv.html">CV</a>
           </li>
@@ -49,26 +58,20 @@
       </nav>
     </header>
     <main>
-      <h1>Forside indhold her</h1>
-      <h1>Forside indhold her</h1>
-      <h1>Forside indhold her</h1>
-      <h1>Forside indhold her</h1>
-      <h1>Forside indhold her</h1>
-      <h1>Forside indhold her</h1>
-      <h1>Forside indhold her</h1>
-      <h1>Forside indhold her</h1>
-      <h1>Forside indhold her</h1>
-      <h1>Forside indhold her</h1>
-      <h1>Forside indhold her</h1>
-      <h1>Forside indhold her</h1>
-      <h1>Forside indhold her</h1>
-      <h1>Forside indhold her</h1>
-      <h1>Forside indhold her</h1>
-      <h1>Forside indhold her</h1>
-      <h1>Forside indhold her</h1>
-      <h1>Forside indhold her</h1>
-      <h1>Forside indhold her</h1>
-      <h1>Forside indhold her</h1>
+      <div class="temaer">
+        <a href="web.html" class="tema web">
+          <p>Web</p>
+        </a>
+        <a href="ux.html" class="tema ux">
+          <p>UX</p>
+        </a>
+        <a href="animation.html" class="tema animation">
+          <p>Animation</p>
+        </a>
+        <a href="indhold.html" class="tema indhold">
+          <p>Indhold</p>
+        </a>
+      </div>
     </main>
     <footer>
       <div class="inner-footer">
