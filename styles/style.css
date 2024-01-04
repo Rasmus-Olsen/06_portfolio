@@ -36,7 +36,8 @@ main {
 h1 {
   color: #fff;
   font-size: 42px;
-  margin: 20px;
+  margin: 60px 0;
+  text-align: center;
 }
 
 h2 {
@@ -217,10 +218,7 @@ header nav ul li a:hover {
     box-shadow: inherit;
     background: inherit;
     position: inherit;
-    top: 8%;
-  }
-  .dropdown-btn svg {
-    display: none;
+    top: 2%;
   }
 }
 
@@ -299,6 +297,11 @@ header nav ul li a:hover {
   }
 }
 
+@media (max-width: 800px) {
+  .order {
+    order: -1;
+  }
+}
 /*
 * Footer
 */
@@ -486,4 +489,32 @@ footer p {
 
 .image-text img {
   border-radius: 16px;
+}
+
+.side-link {
+  font-size: 24px;
+}
+.side-link a {
+  font-size: 24px;
+}
+
+.ux-underside img {
+  margin-bottom: 20px;
+}
+
+.ux-underside {
+  color: white;
+}
+
+.ux-underside .image-wrapper img {
+  object-fit: contain;
+}
+
+.ux-underside .image-wrapper .image h3 {
+  margin-bottom: 10px;
+}
+
+.ux-underside img {
+  border-radius: 0;
+  object-fit: cover;
 }
