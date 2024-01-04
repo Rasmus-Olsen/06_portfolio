@@ -9,7 +9,3 @@ document.addEventListener("DOMContentLoaded", function () {
     active.classList.toggle("menu-opened");
   });
 });
-
-/*
- * Dropdown
- */

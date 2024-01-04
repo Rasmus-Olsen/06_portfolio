@@ -33,18 +33,6 @@ main {
   }
 }
 
-.top img {
-  object-fit: contain;
-}
-
-.top .computer {
-  position: absolute;
-  height: 150px;
-  width: 150px;
-  bottom: 10px;
-  left: 650px;
-}
-
 h1 {
   color: #fff;
   font-size: 42px;
@@ -128,6 +116,32 @@ header nav ul li a:hover {
   margin: auto 0;
   position: relative;
   display: flex;
+}
+
+@media (max-width: 800px) {
+  .top {
+    height: 150px;
+  }
+}
+
+.top img {
+  object-fit: contain;
+}
+
+.top .computer {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  bottom: 10px;
+  left: 45%;
+}
+
+@media (max-width: 800px) {
+  .top .computer {
+    height: 40px;
+    width: 40px;
+    bottom: 25px;
+  }
 }
 
 .top h1 {
@@ -222,10 +236,6 @@ header nav ul li a:hover {
 * Burgermenu
 */
 @media (max-width: 800px) {
-  .top {
-    height: 200px;
-  }
-
   .inner-header {
     display: flex;
     margin-right: auto;
