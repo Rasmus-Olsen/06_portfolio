@@ -24,7 +24,7 @@ body {
 }
 
 main {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 30px auto;
 }
 @media (max-width: 800px) {
@@ -36,7 +36,7 @@ main {
 h1 {
   color: #fff;
   font-size: 42px;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 h2 {
@@ -130,18 +130,10 @@ header nav ul li a:hover {
 
 .top .computer {
   position: absolute;
-  height: 150px;
-  width: 150px;
+  height: 43%;
+  width: 10%;
   bottom: 10px;
   left: 45%;
-}
-
-@media (max-width: 800px) {
-  .top .computer {
-    height: 40px;
-    width: 40px;
-    bottom: 25px;
-  }
 }
 
 .top h1 {
@@ -175,10 +167,10 @@ header nav ul li a:hover {
   font-size: 24px;
 }
 
-.dropdown-btn:hover {
+/* .dropdown-btn:hover {
   color: var(--primary-color);
   opacity: 0.5;
-}
+} */
 
 .dropdown-btn svg {
   transition: all 0.4s ease-in-out;
@@ -395,6 +387,17 @@ footer p {
   }
 }
 
+.copyright {
+  display: flex;
+  color: #fff;
+  padding: 20px;
+  background-color: #141e59;
+}
+
+.copyright p {
+  opacity: 0.6;
+}
+
 /*
 * Forside
 */
@@ -411,6 +414,7 @@ footer p {
   align-items: center;
   justify-content: center;
   margin: 0;
+  cursor: pointer;
 }
 
 .tema {
@@ -463,4 +467,23 @@ footer p {
   .forside img {
     height: 300px;
   }
+}
+
+.cv {
+  align-items: center;
+}
+.cv img {
+  border-radius: 18px;
+}
+
+.cv .cv-text {
+  color: #fff;
+}
+
+.image-text .text-wrapper {
+  color: #fff;
+}
+
+.image-text img {
+  border-radius: 16px;
 }
