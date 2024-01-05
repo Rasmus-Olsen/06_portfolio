@@ -558,8 +558,8 @@ footer p {
   font-size: 24px;
 }
 
-.image-wrapper img {
-  object-fit: contain;
+.image-wrapper .image {
+  margin-bottom: 20px;
 }
 
 .image-wrapper .image h3 {
