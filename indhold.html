@@ -3,25 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <link rel="manifest" href="img/favicon_io/site.webmanifest" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/layout.css" />
     <title>Indhold</title>
   </head>
   <body>
-    <div class="top">
-      <img src="images/Artboard_4.webp" alt="" />
-      <img class="computer" src="images/computer.webp" alt="" />
-    </div>
     <header id="active-menu">
       <div class="inner-header">
-        <div class="logo">
-          <a href="index.html"><img src="images/favicon_io/android-chrome-192x192.png" alt="Logo" /></a>
-        </div>
-
         <div class="burger-menu">
           <div class="menu-icon" id="menu-icon">
             <div class="bar bar-1"></div>
@@ -33,21 +32,21 @@
       <nav class="active-show">
         <ul>
           <li>
-            <a class="active" href="index.html">Forside</a>
+            <a href="index.html">Forside</a>
           </li>
           <!---Dropdown-->
           <div class="dropdown">
-            <p class="dropdown-btn">
+            <a href="index.html#temaer" class="dropdown-btn">
               Portfolio
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
               </svg>
-            </p>
+            </a>
             <div class="dropdown-content">
               <a href="web.html" class="dropdown-item">Web</a>
               <a href="ux.html" class="dropdown-item">UX</a>
               <a href="animation.html" class="dropdown-item">Animation</a>
-              <a href="indhold.html" class="dropdown-item">Indhold</a>
+              <a class="active" href="indhold.html" class="dropdown-item">Indhold</a>
             </div>
           </div>
           <!---Dropdown end-->
@@ -64,7 +63,7 @@
     <footer>
       <div class="inner-footer">
         <div class="footer-logo">
-          <img src="images/favicon_io/android-chrome-512x512.png" alt="Logo" />
+          <img src="images/favicon/android-chrome-512x512.png" alt="Logo" />
         </div>
         <div class="nav">
           <h4>Sider</h4>
@@ -118,7 +117,7 @@
       </div>
     </footer>
     <div class="copyright">
-      <p>© Copyright - Design og udviklet af Rasmus Olsen</p>
+      <p>© 2024 All Rights Reserved - Design og udviklet af Rasmus Olsen</p>
     </div>
     <script src="script.js"></script>
   </body>

@@ -42,16 +42,17 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 @media (max-width: 800px) {
   .image-text {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 
-.ux-underside .image-wrapper {
+.image-wrapper-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
