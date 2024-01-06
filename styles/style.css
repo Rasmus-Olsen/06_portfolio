@@ -33,6 +33,10 @@ main {
   margin: 30px auto;
 }
 
+ul {
+  list-style: none;
+}
+
 @media (max-width: 800px) {
   main {
     padding: 0 20px;
@@ -47,11 +51,16 @@ main {
 
 h1 {
   color: var(--text);
-  font-size: 42px;
-  margin: 100px 0;
+  font-size: 46px;
+  margin: 80px 0;
   text-align: center;
 }
-
+@media (max-width: 800px) {
+  h1 {
+    font-size: 32px;
+    margin: 30px 0;
+  }
+}
 h1.stor {
   font-size: 14rem;
   margin: 0 auto;
@@ -61,7 +70,7 @@ h1.stor {
 
 @media (max-width: 800px) {
   h1.stor {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
@@ -69,6 +78,11 @@ h2 {
   color: var(--text);
   font-size: 36px;
   margin-bottom: 20px;
+}
+@media (max-width: 800px) {
+  h2 {
+    font-size: 26px;
+  }
 }
 
 h3 {
@@ -93,7 +107,11 @@ p {
   font-size: 16px;
   color: var(--text);
   margin-bottom: 10px;
-  line-height: 1.2;
+  line-height: 1.6;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 a {
@@ -218,7 +236,6 @@ header nav ul li a:hover {
   }
   .dropdown-content {
     display: block;
-    box-shadow: inherit;
     background: inherit;
     position: inherit;
     top: 2%;
@@ -283,6 +300,7 @@ header nav ul li a:hover {
     position: absolute;
     background: var(--background);
     width: 100%;
+    margin-top: -2px;
   }
 
   .menu-opened .bar-1 {
@@ -310,7 +328,7 @@ header nav ul li a:hover {
 * hero
 */
 .hero {
-  height: 100vh;
+  height: 80vh;
 }
 
 @media (max-width: 800px) {
@@ -377,6 +395,8 @@ footer li {
 
 footer p {
   color: #60657c;
+  font-weight: bold;
+  color: var(--text);
 }
 
 footer a {
@@ -389,9 +409,34 @@ footer a:hover {
   color: var(--medium-grey);
 }
 
-footer p {
-  font-weight: bold;
-  color: var(--text);
+.temabeskrivelse {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  /* margin-bottom: 50px; */
+  padding: 30px;
+  border-radius: 16px;
+  /* box-shadow: 10px 0px 49px 16px rgba(255, 255, 255, 0.75); */
+}
+
+@media (max-width: 800px) {
+  .temabeskrivelse {
+    padding: 0;
+    text-align: left;
+  }
+}
+
+#underside {
+  padding-top: 80px;
+}
+
+.top {
+  height: 75vh;
+}
+@media (max-width: 800px) {
+  .top {
+    height: inherit;
+  }
 }
 
 .social {
@@ -445,8 +490,7 @@ footer p {
     width: 80px;
   }
   footer li,
-  a,
-  p {
+  a {
     font-size: 20px;
   }
 }
@@ -481,9 +525,7 @@ footer p {
   justify-content: center;
   margin: 0;
   cursor: pointer;
-  /*
-  * NY
-  */
+
   height: 300px;
 }
 
@@ -512,6 +554,19 @@ footer p {
   font-size: 30px;
 }
 
+.link {
+  width: 60%;
+  margin: 0 auto;
+  height: 400px;
+}
+
+@media (max-width: 800px) {
+  .link {
+    height: 300px;
+    width: 100%;
+  }
+}
+
 .web {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../images/mincomputer.webp);
 }
@@ -526,6 +581,42 @@ footer p {
 
 .indhold {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../images/billede1.webp);
+}
+
+.visitkort {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../images/visitkort.webp);
+}
+
+.kaeledyr {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../images/kæledyr.webp);
+}
+
+.studie {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../images/web2.webp);
+}
+
+.espressotools {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../images/espressotools.webp);
+}
+
+.animation {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../images/spil-baggrund.webp);
+}
+
+.videosite {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../images/videosite.webp);
+  height: 400px;
+}
+
+.virksomhedssite {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../images/virksomhedssite.webp);
+  height: 400px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
 }
 
 .forside img {
@@ -568,4 +659,36 @@ footer p {
 
 .ux-underside img {
   object-fit: cover;
+}
+
+/*
+* Animation
+*/
+.image-grid {
+  display: grid;
+  gap: 30px;
+}
+
+.image-animation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.image-animation img {
+  height: 140px;
+  width: 140px;
+}
+
+@media (max-width: 800px) {
+  .image-animation img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.image-wrapper {
+  gap: 20px;
+  display: grid;
 }

@@ -57,66 +57,84 @@
       </nav>
     </header>
     <main>
-      <h1>Tema 4 - Grundlæggende Animation</h1>
-      <div class="image-text">
-        <video controls muted src="https://roweb.dk/kea/06_indhold/paperprototype.mp4"></video>
-        <div class="text-wrapper">
-          <h2>Spil ide & paper prototype</h2>
-          <h5>Spil ide</h5>
-          <p>Min arbejdsproces begyndte med idégenerering efter at have studeret tidligere elevers koncepter.</p>
-          <p>Herefter tog jeg udgangspunkt i de afgørende elementer for mit spil, herunder spillets navn, stilistiske referencer, gameplay, belønningssystem og den ønskede atmosfære.</p>
-          <h5>Paper prototype</h5>
-          <p>Efter en grundig beslutning om de ønskede og uønskede elementer i spillet samt fastlæggelse af baggrundens struktur og placeringen af liv, point og timer, indledte jeg processen med at visualisere disse idéer.</p>
-          <p>Dette omfattede tegning af diverse elementer, udvikling af en papirprototype og produktion af en instruktionsvideo, der forklare hvordan spillet skulle fungere.</p>
+      <div class="top">
+        <h1>Tema 4 - Grundlæggende Animation</h1>
+        <div class="temabeskrivelse">
+          <h2>Formål</h2>
+          <p>I dette tema har vi valgt, at du skal bruge JavaScript sammen med CSS-animationer for at skabe et lille spil. Dit spil skal have et koncept og en idé, som du selv finder frem til, og du skal selv designe alle elementer og kode spillet helt fra bunden.</p>
+          <p>I dette tema fokuserer vi på professionel formgivning af grafiske elementer, hvor du analyserer spildesign og engagerer brugeren gennem teori og konventioner inden for UI-elementer, figurative elementer, baggrundsdesign og kompositionsteknikker. Du udvikler dit eget spildesign og redesigner grafikken i Adobe Illustrator efter moderne konventioner.</p>
+          <p>Gennem arbejdet med dit eget spil vil du lære at arbejde med aktivitets- og state machine-diagrammer, som bruges til at planlægge det mere komplekse interaktive flow.</p>
+        </div>
+        <div class="arrow-down">
+          <a class="arrow" href="animation.html#underside">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+          </a>
         </div>
       </div>
-      <div class="image-text">
-        <div class="text-wrapper">
-          <h2>Design principper & Illustrator</h2>
-          <h5>Design principper</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsa assumenda adipisci aperiam qui placeat blanditiis asperiores iste cumque quaerat, mollitia sint architecto commodi perferendis recusandae repellat amet ratione odio!</p>
-          <h5>Illustrator</h5>
-          <p>Efter udarbejdelsen af min papirprototype og fastlæggelsen af det ønskede design, indledte jeg implementeringen ved at skabe elementerne i Illustrator. Jeg påbegyndte processen med at designe mindre komponenter som knapper og figurer, der var forholdsvis ligetil.</p>
-          <p>For de mere komplekse elementer som startskærmens baggrund og spillets generelle baggrund valgte jeg at søge assistance fra AI, da jeg fandt det udfordrende at opnå tilfredsstillende resultater på egen hånd.</p>
+      <div id="underside" class="animation-underside">
+        <div class="image-text">
+          <video controls muted src="https://roweb.dk/kea/06_indhold/paperprototype.mp4"></video>
+          <div class="text-wrapper">
+            <h2>Spil ide & paper prototype</h2>
+            <h5>Spil ide</h5>
+            <p>Min arbejdsproces begyndte med idégenerering efter at have studeret tidligere elevers koncepter.</p>
+            <p>Herefter tog jeg udgangspunkt i de afgørende elementer for mit spil, herunder spillets navn, stilistiske referencer, gameplay, belønningssystem og den ønskede atmosfære.</p>
+            <h5>Paper prototype</h5>
+            <p>Efter en grundig beslutning om de ønskede og uønskede elementer i spillet samt fastlæggelse af baggrundens struktur og placeringen af liv, point og timer, indledte jeg processen med at visualisere disse idéer.</p>
+            <p>Dette omfattede tegning af diverse elementer, udvikling af en papirprototype og produktion af en instruktionsvideo, der forklare hvordan spillet skulle fungere.</p>
+          </div>
         </div>
-        <img src="images/spil.webp" alt="Spil startskærm" />
+        <div class="image-text">
+          <div class="text-wrapper">
+            <h2>Design principper & Illustrator</h2>
+            <h5>Design principper</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsa assumenda adipisci aperiam qui placeat blanditiis asperiores iste cumque quaerat, mollitia sint architecto commodi perferendis recusandae repellat amet ratione odio!</p>
+            <h5>Illustrator</h5>
+            <p>Efter udarbejdelsen af min papirprototype og fastlæggelsen af det ønskede design, indledte jeg implementeringen ved at skabe elementerne i Illustrator. Jeg påbegyndte processen med at designe mindre komponenter som knapper og figurer, der var forholdsvis ligetil.</p>
+            <p>For de mere komplekse elementer som startskærmens baggrund og spillets generelle baggrund valgte jeg at søge assistance fra AI, da jeg fandt det udfordrende at opnå tilfredsstillende resultater på egen hånd.</p>
+          </div>
+          <div class="image-grid order">
+            <img src="images/spil.webp" alt="Spil startskærm" />
+            <div class="image-animation">
+              <img src="images/appelsin.webp" alt="" />
+              <img src="images/liv.webp" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="image-text">
+          <img src="images/keyframes.webp" alt="Keyframes" />
+          <div class="text-wrapper">
+            <h2>CSS animationer</h2>
+            <p>CSS-animationer med keyframes er en teknik, der bruger CSS til at skabe bevægelse eller ændringer i udseendet af HTML-elementer. Ved at definere nøglepunkter (keyframes) styrer du start og slut af animationen, og CSS tager sig af at generere de mellemværdier for en glidende overgang. Det giver mulighed for at tilføje visuel dynamik til webindhold uden behov for ekstra JavaScript eller komplekse animationsscript.</p>
+            <p>På billedet ude til venstre viser jeg hvordan man får noget til at falde fra en position til en anden mens den rotere et antal grader</p>
+          </div>
+        </div>
+        <div class="image-text">
+          <div class="text-wrapper">
+            <h2>Javascript</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsa assumenda adipisci aperiam qui placeat blanditiis asperiores iste cumque quaerat, mollitia sint architecto commodi perferendis recusandae repellat amet ratione odio!</p>
+          </div>
+          <img class="order" src="images/web2.webp" alt="Grid" />
+        </div>
+        <div class="image-text">
+          <div class="image-wrapper">
+            <img src="images/statemachine.webp" alt="Statemachine diagram" />
+            <img class="white" src="images/aktivitetsdiagram.webp" alt="Aktivitetsdiagram" />
+          </div>
+          <div class="text-wrapper">
+            <h2>State machine diagram & Aktivitetsdiagram</h2>
+            <h5>State machine diagram</h5>
+            <p>Et state machine diagram i spildesign viser de "tilstande," eller situationer, de kan være i (som at stå stille, bevæge sig eller lign), og hvordan de skifter mellem disse tilstande baseret på, hvad spillet "ser" eller "oplever." På den måde hjælper det spiludviklere med at planlægge og forstå, hvordan spilelementerne opfører sig dynamisk.</p>
+            <h5>Aktivitetsdiagram</h5>
+            <p>Et aktivitetsdiagram i spildesign visualiserer sekvensen af handlinger og beslutninger i et bestemt scenarie. Det viser, hvordan spilleren eller spilobjekterne interagerer og udfører handlinger i reaktion på begivenheder eller betingelser. Et eksempel kunne være et aktivitetsdiagram for et dialogsystem, der illustrerer, hvordan spillerens valg påvirker handlingen og kan føre til forskellige scenarier.</p>
+          </div>
+        </div>
       </div>
-      <div class="image-text">
-        <img src="images/keyframes.webp" alt="Keyframes" />
-        <div class="text-wrapper">
-          <h2>CSS animationer</h2>
-          <p>CSS-animationer med keyframes er en teknik, der bruger CSS til at skabe bevægelse eller ændringer i udseendet af HTML-elementer. Ved at definere nøglepunkter (keyframes) styrer du start og slut af animationen, og CSS tager sig af at generere de mellemværdier for en glidende overgang. Det giver mulighed for at tilføje visuel dynamik til webindhold uden behov for ekstra JavaScript eller komplekse animationsscript.</p>
-          <p>På billedet ude til venstre viser jeg hvordan man får noget til at falde fra en position til en anden mens den rotere et antal grader</p>
-        </div>
-      </div>
-      <div class="image-text">
-        <div class="text-wrapper">
-          <h2>Javascript</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsa assumenda adipisci aperiam qui placeat blanditiis asperiores iste cumque quaerat, mollitia sint architecto commodi perferendis recusandae repellat amet ratione odio!</p>
-        </div>
-        <img src="images/web2.webp" alt="Grid" />
-      </div>
-      <div class="image-text">
-        <div class="image-wrapper">
-          <img src="images/statemachine.webp" alt="Statemachine diagram" />
-          <img class="white" src="images/aktivitetsdiagram.webp" alt="Aktivitetsdiagram" />
-        </div>
-        <div class="text-wrapper">
-          <h2>State machine diagram & Aktivitetsdiagram</h2>
-          <h5>State machine diagram</h5>
-          <p>Et state machine diagram i spildesign viser de "tilstande," eller situationer, de kan være i (som at stå stille, bevæge sig eller lign), og hvordan de skifter mellem disse tilstande baseret på, hvad spillet "ser" eller "oplever." På den måde hjælper det spiludviklere med at planlægge og forstå, hvordan spilelementerne opfører sig dynamisk.</p>
-          <h5>Aktivitetsdiagram</h5>
-          <p>Et aktivitetsdiagram i spildesign visualiserer sekvensen af handlinger og beslutninger i et bestemt scenarie. Det viser, hvordan spilleren eller spilobjekterne interagerer og udfører handlinger i reaktion på begivenheder eller betingelser. Et eksempel kunne være et aktivitetsdiagram for et dialogsystem, der illustrerer, hvordan spillerens valg påvirker handlingen og kan føre til forskellige scenarier.</p>
-        </div>
-      </div>
-      <div class="image-text">
-        <div class="text-wrapper">
-          <h2>Lyd</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsa assumenda adipisci aperiam qui placeat blanditiis asperiores iste cumque quaerat, mollitia sint architecto commodi perferendis recusandae repellat amet ratione odio!</p>
-        </div>
-        <img src="images/web2.webp" alt="Grid" />
-      </div>
-      <p class="side-link">Se hele opgaven <a href="https://roweb.dk/kea/04_animation/website/">her</a></p>
+      <a target="_blank" href="https://roweb.dk/kea/04_animation/website/" class="tema link animation">
+        <p>Animation</p>
+      </a>
     </main>
     <footer>
       <div class="inner-footer">
