@@ -599,6 +599,10 @@ footer a:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../images/espressotools.webp);
 }
 
+.presentation {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../images/presentation.webp);
+}
+
 .animation {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../images/spil-baggrund.webp);
 }
