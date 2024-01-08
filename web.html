@@ -77,10 +77,9 @@
         <div class="image-text">
           <div class="text-wrapper">
             <h2>Visitkort & kældedyr</h2>
-            <h5>Visitkort</h5>
-            <p>Under vores første projekt fokuserede vi på at skabe et visitkort ved hjælp af HTML. Formålet med denne øvelse var at opnå praktisk erfaring med HTML og skabe et grundlæggende webelement. Visitkortet inkluderede personlige oplysninger som navn, alder og beskrivelse af vores fritidsaktiviteter. Vi integrerede også et billede af os selv for at give visitkortet et visuelt element. Dette projekt tjente som en indledende øvelse, hvor vi kunne anvende HTML-færdigheder og begynde at forstå grundlæggende webudvikling.</p>
-            <h5>Kældedyr</h5>
-            <p>I det næste projekt gentog vi i store træk processen fra vores visitkort, blot med den ændring, at vi denne gang skulle skabe en hjemmeside om kæledyr. Vi arbejdede igen med listeelementer som ul og li, hvilket udvidede vores kendskab til HTML. En ekstra opgave var at inkludere links til en anden hjemmeside med yderligere information om vores kæledyr. Generelt var det her projekt bare for at lære os at gøre tingene og huske dem</p>
+            <p>Ved starten af kurset blev vi introduceret til HTML og CSS. Vores første praktiske opgave involverede oprettelse af en simpel hjemmeside udelukkende ved hjælp af HTML. Opgaven bestod i at skabe et visitkort, hvor vi skulle præsentere os selv og dele information om vores interesser og fritidsaktiviteter.</p>
+            <p>Efter fuldførelsen af denne opgave blev vi udfordret til at skabe en kæledyrshjemmeside, igen kun ved brug af ren HTML, uden nogen form for styling med CSS på dette tidspunkt. Dette gav os en dybere forståelse af HTML-struktur og lærte os essentielle elementer som overskrifter, tekst, links og lister.</p>
+            <p>Disse indledende projekter har dannet grundlaget for vores forståelse af HTML og har bidraget til udviklingen af vores kompetencer inden for opbygning af webindhold.</p>
           </div>
           <div class="image-wrapper-2 order">
             <a target="_blank" href="https://roweb.dk/kea/02_web/visitkort/index.html" class="tema visitkort">
@@ -92,16 +91,39 @@
           </div>
         </div>
         <div class="image-text">
-          <img src="images/web2.webp" alt="Grid" />
+          <img src="images/gestalt.webp" alt="Grid" />
           <div class="text-wrapper">
-            <h2>Designprincipper & gestaltlovene</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsa assumenda adipisci aperiam qui placeat blanditiis asperiores iste cumque quaerat, mollitia sint architecto commodi perferendis recusandae repellat amet ratione odio!</p>
+            <h2>Gestaltlovene</h2>
+            <p>Gestaltlovene udgør fundamentale retningslinjer inden for design, der skaber en intuitiv og letforståelig struktur på et website. Disse love hjælper med at forme visuelle elementer på en måde, der styrker brugerens opfattelse og navigation.</p>
+            <ul>
+              <li>
+                <p class="margin">Loven om lighed:</p>
+                <p>Ensartede farver og former bruges til at etablere konsistens, idet elementer opfattes som relaterede, når de deler visuelle karakteristika.</p>
+              </li>
+              <li>
+                <p class="margin">Loven om nærhed:</p>
+                <p>Elementer, der er tæt på hinanden eller ligger sammen, opfattes som relaterede, hvilket skaber visuel sammenhæng.</p>
+              </li>
+              <li>
+                <p class="margin">Loven om lukkethed:</p>
+                <p>Elementer, der er afgrænset af en ydre ramme eller container i en bestemt farve, opfattes som en separat enhed, hvilket letter forståelsen.</p>
+              </li>
+              <li>
+                <p class="margin">Loven om forbundethed:</p>
+                <p>Elementer opfattes som relaterede, hvis de har en visuel forbindelse, f.eks. ved at stå side om side eller dele en fælles visuel egenskab.</p>
+              </li>
+              <li>
+                <p class="margin">Loven om figur og baggrund:</p>
+                <p>Kontrasten mellem en figur og dens baggrund skaber et klart segment, der gør det let for brugeren at identificere hovedelementet.</p>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="image-text">
           <div class="text-wrapper">
             <h2>Grid & media queries</h2>
             <p>I denne opgave indledte vi vores studie af grid-systemet ved at engagere os i en række opgaver, der strakte sig over desktop- og mobilplatforme. Gennem disse opgaver lærte vi meget om forståelsen og anvendelse af grid. Samtidig eksplorerede vi også media queries for at tilpasse og optimere vores layouts til at være responsivt og passe til forskellige skærmstørrelser.</p>
+            <p>I eksemplet, jeg har præsenteret, implementerede jeg et display grid, der giver mig friheden til at arbejde med gridstrukturer. Desuden anvendte jeg grid-template-columns: repeat(3, 1fr);, hvilket resulterede i, at gridet blev opdelt i tre lige store bokse på min desktop. Denne styling aktiveres kun, når skærmstørrelsen overstiger 750px, da den er indlejret i en media query designet til desktop-visning. Derudover har jeg inkluderet "gap" i denne konfiguration. Gap refererer til det mellemrum, der oprettes mellem hvert grid-element ved hjælp af nogle specificerede pixels. Dette skaber et ensartet mellemrum mellem elementerne, uanset hvor mange der er</p>
             <ul>
               <li>
                 <a target="_blank" href="https://roweb.dk/kea/02_web/01_website/grid_layout_1/index.html">Grid opgave 1</a>
@@ -117,7 +139,10 @@
               </li>
             </ul>
           </div>
-          <img class="order" src="images/grid.webp" alt="Grid" />
+          <div class="image-wrapper order">
+            <img src="images/grid.webp" alt="Grid" />
+            <img src="images/grid-1-1-1.webp" alt="" />
+          </div>
         </div>
 
         <div class="image-text">
@@ -132,30 +157,34 @@
           <div class="text-wrapper">
             <h2>Burgermenu</h2>
             <p>Dette var første gang, vi stod over for opgaven med at skabe en burgermenu. Vi havde valget mellem at implementere den ved hjælp af CSS eller JavaScript. På grund af min tidligere erfaring med at arbejde med burgermenuer, hvor jeg altid anvendte JavaScript, besluttede jeg mig for at følge samme tilgang her.</p>
-            <p>
-              document.addEventListener("DOMContentLoaded", function () {...}); <br />
-              gør bare at man er sikker på at alt HTML er læst før handlingen sker. Dette er afgørende for at undgå uventet adfærd, da det garanterer, at DOM'en er klar til manipulation.
-            </p>
-            <p>
-              const menuIcon = document.getElementById("menu-icon"); <br />
-              Ved at bruge getElementById-metoden gemmes det HTML-element med id'en "menu-icon" i variablen 'menuIcon'. Dette understreger behovet for effektiv kode og forbedrer læsbarheden ved at reducere gentaget kodning.
-            </p>
-            <p>
-              menuIcon.addEventListener("click", function () {...}); <br />
-              Dette er en event-lytter, der reagerer på et klik på burgermenu-ikonet. Når ikonet klikkes, udfører den følgende funktion:
-            </p>
-            <p>
-              navLinks.classList.toggle("menu-opened"); <br />
-              Denne linje tilføjer eller fjerner klassen "menu-opened" fra elementet med id'en "active-menu". Hvis klassen ikke er til stede, tilføjes den, og hvis den allerede er til stede, fjernes den. Dette skaber en åben/lukket-effekt for din burgermenu
-            </p>
+            <ul>
+              <li>
+                <p class="margin">document.addEventListener("DOMContentLoaded", function () {...});</p>
+                <p>gør bare at man er sikker på at alt HTML er læst før handlingen sker. Dette er afgørende for at undgå uventet adfærd, da det garanterer, at DOM'en er klar til manipulation.</p>
+              </li>
+              <li>
+                <p class="margin">const menuIcon = document.getElementById("menu-icon");</p>
+                <p>Ved at bruge getElementById-metoden gemmes det HTML-element med id'en "menu-icon" i variablen 'menuIcon'. Dette understreger behovet for effektiv kode og forbedrer læsbarheden ved at reducere gentaget kodning.</p>
+              </li>
+              <li>
+                <p class="margin">menuIcon.addEventListener("click", function () {...});</p>
+                <p>Dette er en event-lytter, der reagerer på et klik på burgermenu-ikonet. Når ikonet klikkes, udfører den følgende funktion:</p>
+              </li>
+              <li>
+                <p class="margin">navLinks.classList.toggle("menu-opened");</p>
+                <p>Denne linje tilføjer eller fjerner klassen "menu-opened" fra elementet med id'en "active-menu". Hvis klassen ikke er til stede, tilføjes den, og hvis den allerede er til stede, fjernes den. Dette skaber en åben/lukket-effekt for din burgermenu</p>
+              </li>
+            </ul>
           </div>
         </div>
-
-        <a target="_blank" href="https://roweb.dk/kea/02_web/01_website/website_m_burgermenu" class="tema studie link">
-          <p>Studiestartprøven</p>
-        </a>
       </div>
     </main>
+    <div class="linje"></div>
+    <div class="bottom">
+      <a target="_blank" href="https://roweb.dk/kea/02_web/01_website/website_m_burgermenu" class="tema studie link">
+        <p>Studiestartprøven</p>
+      </a>
+    </div>
     <footer>
       <div class="inner-footer">
         <div class="footer-logo">

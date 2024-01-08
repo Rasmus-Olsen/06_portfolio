@@ -45,6 +45,10 @@
   margin-bottom: 100px;
 }
 
+.image-text.javascript {
+  grid-template-columns: 2fr 1fr;
+}
+
 @media (max-width: 800px) {
   .image-text {
     grid-template-columns: 1fr;
@@ -57,4 +61,16 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+@media (max-width: 800px) {
+  .links {
+    grid-template-columns: 1fr;
+  }
 }
