@@ -15,6 +15,10 @@ video {
   border-radius: 12px;
 }
 
+img.height {
+  height: 400px;
+}
+
 html {
   --background: #09030f;
   --margin-bottom: 40px;
