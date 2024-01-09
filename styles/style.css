@@ -493,8 +493,12 @@ header nav ul li a:hover {
 }
 
 @media (min-width: 800px) {
-  .inner-footer .footer-logo {
-    margin: inherit;
+  @media (min-width: 800px) {
+    footer .inner-footer .footer-logo,
+    .nav,
+    .social {
+      margin: 0 auto;
+    }
   }
 }
 
