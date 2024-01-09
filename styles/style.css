@@ -229,7 +229,6 @@ header nav ul li a:hover {
 @media (min-width: 800px) {
   .dropdown {
     position: relative;
-    flex-direction: row;
   }
 }
 .dropdown svg {
